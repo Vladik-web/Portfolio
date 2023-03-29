@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  @@include('components/_head.html', {title: 'Avion'})
+  <body>
+    @@include("components/_cursor.html")
+    <div class="base-layout">
+      @@include("components/_header.html")
+      <main class="main">
+        <section class="hero">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h1 class="hero__title">Luxury homeware for people who love timeless design quality</h1>
+              <p class="hero__description">
+                With our new collection, view over 400 bespoke pieces from homeware through to furniture today
+              </p>
+              <a href="#" class="hero__link btn btn--medium-secondary">View collection</a>
+            </div>
+            <div class="hero__bg">
+              <img src="img/hero-bg.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="features">
+          <div class="container">
+            <div class="features__inner" data-animate>
+              <h2 class="features__title">What makes our brand different</h2>
+
+              <ul class="features__list">
+                <li class="features__item">
+                  <svg class="features__item-svg">
+                    <use xlink:href="img/sprite.svg#delivery"></use>
+                  </svg>
+                  <h3 class="features__item-title">Next day as standard</h3>
+                  <p class="features__item-description">Order before 3pm and get your order the next day as standard</p>
+                </li>
+                <li class="features__item">
+                  <svg class="features__item-svg">
+                    <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                  </svg>
+                  <h3 class="features__item-title">Made by true artisans</h3>
+                  <p class="features__item-description">
+                    Handmade crafted goods made with real passion and craftmanship
+                  </p>
+                </li>
+                <li class="features__item">
+                  <svg class="features__item-svg">
+                    <use xlink:href="img/sprite.svg#purchase"></use>
+                  </svg>
+                  <h3 class="features__item-title">Made by true artisans</h3>
+                  <p class="features__item-description">
+                    Handmade crafted goods made with real passion and craftmanship
+                  </p>
+                </li>
+                <li class="features__item">
+                  <svg class="features__item-svg">
+                    <use xlink:href="img/sprite.svg#sprout"></use>
+                  </svg>
+                  <h3 class="features__item-title">Recycled packaging</h3>
+                  <p class="features__item-description">
+                    We use 100% recycled to ensure our footprint is more manageable
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="listings">
+          <div class="container">
+            <div class="listings__inner" data-animate>
+              <ul class="listings__list">
+                <li class="listings__card product-card">
+                  <div class="product-card">
+                    <a href="product.html" class="product-card__image">
+                      <img src="img/products/1.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Dandy chair</h3>
+                    <strong class="product-card__price">£250</strong>
+                  </div>
+                </li>
+                <li class="listings__card product-card">
+                  <div class="product-card">
+                    <a href="product.html" class="product-card__image">
+                      <img src="img/products/2.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">Rustic Vase Set</h3>
+                    <strong class="product-card__price">£155</strong>
+                  </div>
+                </li>
+                <li class="listings__card product-card">
+                  <div class="product-card">
+                    <a href="product.html" class="product-card__image">
+                      <img src="img/products/3.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Silky Vase</h3>
+                    <strong class="product-card__price">£125</strong>
+                  </div>
+                </li>
+                <li class="listings__card product-card">
+                  <div class="product-card">
+                    <a href="product.html" class="product-card__image">
+                      <img src="img/products/4.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Lucy Lamp</h3>
+                    <strong class="product-card__price">£399</strong>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="listings__link btn btn--medium-secondary">View collection</a>
+            </div>
+          </div>
+        </section>
+        <section class="promo">
+          <div class="container">
+            <div class="promo__inner" data-animate>
+              <div class="promo__left">
+                <h2 class="promo__title">It started with a small idea</h2>
+                <p class="promo__text">
+                  A global brand with local beginnings, our story begain in a small studio in South London in early 2014
+                </p>
+                <a href="#" class="promo__link btn btn--medium-opaque">View collection</a>
+              </div>
+              <div class="promo__right">
+                <img src="img/promo.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="email-block">
+          <div class="container">
+            <div class="email-block__inner" data-animate>
+              <h2 class="email-block__title">Join the club and get the benefits</h2>
+              <p class="email-block__text">
+                Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more
+              </p>
+              <div class="email-block__form">
+                <form class="email-block__form form-input">
+                  <input type="text" class="form-input__input" placeholder="your@email.com" />
+                  <button class="form-input__submit btn btn--medium-primary" type="submit">Sign up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include("components/_footer.html")
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+@mixin grid-cards($type: fill, $min: 280px, $max: 1fr, $gap: 30px) {
+  display: grid;
+  grid-template-columns: repeat(auto-#{$type}, minmax($min, $max));
+  gap: $gap;
+}
+
+@mixin grid-default-set($count, $value, $gap) {
+  display: grid;
+  grid-template-columns: repeat($count, $value);
+  gap: $gap;
+}

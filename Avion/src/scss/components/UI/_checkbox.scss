@@ -1,0 +1,52 @@
+.checkbox {
+  @include flex-v-center;
+
+  position: relative;
+  width: fit-content;
+  font-size: rem(16);
+  line-height: 1.5;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  &__custom {
+    position: relative;
+    margin-right: rem(12);
+    border: rem(1) solid #dcdcdc;
+    border-radius: rem(2);
+    width: rem(16);
+    height: rem(16);
+    background-color: transparent;
+    transition: 0.1s ease;
+
+    &::after {
+      @include pos-center-xy;
+
+      content: '';
+      width: rem(12);
+      height: rem(9);
+      background: url('../img/icons/check.svg') no-repeat center / cover;
+      opacity: 0;
+      visibility: hidden;
+      transition: 0.1s ease;
+    }
+  }
+
+  &__input:checked ~ &__custom {
+    border-color: $primary;
+    background-color: $primary;
+  }
+
+  &__input:checked ~ &__custom::after {
+    opacity: 1;
+    visibility: visible;
+  }
+}

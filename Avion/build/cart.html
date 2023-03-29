@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest.json" />
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#603cba" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Текст" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Cart</title>
+</head>
+
+  <body>
+    <div class="aura"></div>
+<div class="cursor2"></div>
+
+
+    <div class="base-layout">
+      <header class="header" id="header">
+  <div class="banner" id="banner">
+  <div class="banner__inner">
+    <div class="banner__slider swiper">
+      <div class="banner__wrapper swiper-wrapper">
+        <div class="banner__slide swiper-slide">
+          <svg class="banner__icon">
+            <use xlink:href="img/sprite.svg#delivery"></use>
+          </svg>
+          Free delivery on all orders over £50 with code easter checkout
+        </div>
+        <div class="banner__slide swiper-slide">
+          <svg class="banner__icon">
+            <use xlink:href="img/sprite.svg#delivery"></use>
+          </svg>
+          Lorem ipsum dolor sit amet.
+        </div>
+      </div>
+    </div>
+    <button class="banner__close" id="banner-close">
+      <svg class="banner__close-svg">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+  <div class="header__inner">
+    <div class="header__top">
+      <a href="#" class="header__logo">Avion</a>
+      <div class="header__right">
+        <div class="header__wrapper">
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/about.html" class="nav__link link-flip">
+                  <span data-hover="About us">About us</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a href="/contacts.html" class="nav__link link-flip"> <span data-hover="Contact">Contact</span></a>
+              </li>
+              <li class="nav__item">
+                <a href="/blog.html" class="nav__link link-flip"><span data-hover="Blog">Blog</span></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__icons">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">
+                  <svg class="header__link-svg">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="cart.html" class="header__link">
+                  <svg class="header__link-svg">
+                    <use xlink:href="img/sprite.svg#shopping-cart"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">
+                  <svg class="header__link-svg">
+                    <use xlink:href="img/sprite.svg#user-avatar"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="header__close" id="header-close">
+          <svg class="header__close-svg">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <button class="header__burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <svg class="header__burger-svg">
+          <use xlink:href="img/sprite.svg#menu"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="header__bottom">
+      <nav class="header__categories categories" title="">
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a href="#" class="categories__link link-flip"><span data-hover="All products">All products</span> </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link link-flip"><span data-hover="Plant pots">Plant pots</span> </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link link-flip"><span data-hover="Ceramics">Ceramics</span> </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link link-flip"><span data-hover="Tables">Tables</span> </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link link-flip"><span data-hover="Chairs">Chairs</span> </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link link-flip"><span data-hover="Crockery">Crockery</span> </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link link-flip"><span data-hover="Tableware">Tableware</span> </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link link-flip"><span data-hover="Cutlery">Cutlery</span> </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <section class="cart">
+          <div class="container">
+            <div class="cart__inner">
+              <h1 class="cart__title">Your shopping cart</h1>
+
+              <div class="cart__table">
+                <div class="cart__top">
+                  <div class="cart__top-item">Product</div>
+                  <div class="cart__top-item">Quantity</div>
+                  <div class="cart__top-item">Total</div>
+                </div>
+                <div class="cart__bottom">
+                  <ul class="cart__list">
+                    <li class="cart__shopping-card shopping-card">
+                      <div class="shopping-card__left">
+                        <a href="product.html" class="shopping-card__image">
+                          <img src="img/product/pr-1.jpg" alt="" />
+                        </a>
+                      </div>
+                      <div class="shopping-card__info">
+                        <a href="product.html" class="shopping-card__title">Graystone vase</a>
+                        <p class="shopping-card__description">A timeless ceramic vase with a tri color grey glaze.</p>
+                        <span class="shopping-card__price">£85</span>
+                      </div>
+                      <div class="shopping-card__counter">
+                        <div class="shopping-card__stepper stepper">
+                          <button class="stepper__btn">-</button>
+                          <input class="stepper__input" type="number" value="1" />
+                          <button class="stepper__btn">+</button>
+                        </div>
+                      </div>
+                      <span class="shopping-card__total">£85</span>
+                    </li>
+                    <li class="cart__shopping-card shopping-card">
+                      <div class="shopping-card__left">
+                        <a href="product.html" class="shopping-card__image">
+                          <img src="img/product/pr-2.jpg" alt="" />
+                        </a>
+                      </div>
+                      <div class="shopping-card__info">
+                        <a href="product.html" class="shopping-card__title">Graystone vase</a>
+                        <p class="shopping-card__description">A timeless ceramic vase with a tri color grey glaze.</p>
+                        <span class="shopping-card__price">£85</span>
+                      </div>
+                      <div class="shopping-card__counter">
+                        <div class="shopping-card__stepper stepper">
+                          <button class="stepper__btn">-</button>
+                          <input class="stepper__input" type="number" value="1" />
+                          <button class="stepper__btn">+</button>
+                        </div>
+                      </div>
+                      <span class="shopping-card__total">£85</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="cart__subtotal">Subtotal <strong>£210</strong></div>
+              <span class="cart__tip">Taxes and shipping are calculated at checkout</span>
+              <button class="cart__btn btn btn--medium-primary">Go to checkout</button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__left">
+          <h2 class="footer__title">Join our mailing list</h2>
+          <div class="footer__navigation">
+            <ul class="footer__blocks">
+              <li class="footer__block">
+                <h3 class="footer__block-head">Menu</h3>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">New arrivals</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Best sellers</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Recently viewed</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Popular this week</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">All products</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer__block">
+                <h3 class="footer__block-head">Categories</h3>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Crockery</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Furniture</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Plant pots</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Chairs</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Crockery</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer__block">
+                <h3 class="footer__block-head">Our company</h3>
+                <ul class="footer__list">
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">About us</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Vacancies</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Contact us</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Privacy</a>
+                  </li>
+                  <li class="footer__item">
+                    <a href="#" class="footer__link">Returns policy</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__right">
+          <form class="email-block__form form-input form-input--white">
+            <input type="text" class="form-input__input" placeholder="your@email.com" />
+            <button class="form-input__submit btn btn--medium-white" type="submit">Sign up</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <ul class="footer__socials">
+          <li class="footer__social">
+            <a href="#" target="_blank" class="footer__social-link">
+              <svg class="footer__social-icon">
+                <use xlink:href="img/sprite.svg#logo-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social">
+            <a href="#" target="_blank" class="footer__social-link">
+              <svg class="footer__social-icon">
+                <use xlink:href="img/sprite.svg#logo-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social">
+            <a href="#" target="_blank" class="footer__social-link">
+              <svg class="footer__social-icon">
+                <use xlink:href="img/sprite.svg#logo-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social">
+            <a href="#" target="_blank" class="footer__social-link">
+              <svg class="footer__social-icon">
+                <use xlink:href="img/sprite.svg#logo-skype"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social">
+            <a href="#" target="_blank" class="footer__social-link">
+              <svg class="footer__social-icon">
+                <use xlink:href="img/sprite.svg#logo-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social">
+            <a href="#" target="_blank" class="footer__social-link">
+              <svg class="footer__social-icon">
+                <use xlink:href="img/sprite.svg#logo-pinterest"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

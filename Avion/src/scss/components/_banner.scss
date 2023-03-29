@@ -1,0 +1,43 @@
+.banner {
+  position: relative;
+  overflow: hidden;
+  background-color: $dark-primary;
+  transition: max-height 0.2s ease;
+
+  &__inner {
+    padding: rem(11) rem(16);
+  }
+
+  &__slide {
+    @include flex-all-center;
+
+    padding-right: rem(24);
+    height: unset;
+    font-size: rem(14);
+    line-height: 1.35;
+    color: $white;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    margin-right: rem(8);
+    width: rem(16);
+    height: rem(16);
+    fill: $white;
+  }
+
+  &__close {
+    position: absolute;
+    right: rem(16);
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+
+    &-svg {
+      display: block;
+      width: rem(24);
+      height: rem(24);
+      fill: $white;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use 'sass:math';
+
+:root {
+  --app-height: 100vh;
+}
+
+//colors
+$dark-primary: #2a254b;
+$primary: #4e4d93;
+$light-grey: #f9f9f9;
+$border-grey: #ebe8f4;
+$white: #fff;
+$border-dark: #cac6da;
+$black: #000;
+
+//main
+$fontFamily: 'Satoshi', sans-serif;
+$minWidth: 390;
+$maxWidth: 1440;
+$maxWidthContainer: 1280; //container
+$containerPadding: 48;
+$containerIndent: max(rem(math.div($containerPadding, 2)), (100% - rem($maxWidthContainer)) / 2);
+$containerWidth: $maxWidthContainer + $containerPadding;

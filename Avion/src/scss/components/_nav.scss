@@ -1,0 +1,30 @@
+.nav {
+  &__list {
+    @include flex-v-center;
+
+    column-gap: rem(32);
+    flex-wrap: wrap;
+
+    @include mq('md') {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    @include mq('md') {
+      @include mb(rem(30));
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: 1.375;
+    text-decoration: none;
+    color: #726e8d;
+
+    @include mq('md') {
+      font-size: rem(20);
+    }
+  }
+}

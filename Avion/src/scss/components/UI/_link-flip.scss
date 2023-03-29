@@ -1,0 +1,32 @@
+.link-flip {
+  display: flex;
+  overflow: hidden;
+  height: fit-content;
+  font-weight: 400;
+  color: #797878;
+
+  span {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    font-size: rem(16);
+    line-height: 1.375;
+    text-decoration: none;
+    color: #726e8d;
+    transition: 0.3s ease;
+
+    &::before {
+      content: attr(data-hover);
+      position: absolute;
+      top: 100%;
+      color: #726e8d;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @include hover {
+    span {
+      transform: translateY(-100%);
+    }
+  }
+}

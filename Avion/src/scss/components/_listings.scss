@@ -1,0 +1,33 @@
+.listings {
+  background-color: $white;
+
+  &__inner {
+    @include adaptive-value('padding-top', 28, 24);
+    @include adaptive-value('padding-bottom', 40, 28);
+  }
+
+  &__list {
+    @include grid-default-set(4, 1fr, rem(20));
+    @include adaptive-value('margin-bottom', 35, 29);
+
+    @include mq('xl') {
+      @include grid-default-set(2, 1fr, rem(16));
+    }
+
+    @include mq('xs') {
+      @include grid-default-set(1, 1fr, rem(16));
+    }
+  }
+
+  &__card {
+  }
+
+  &__link {
+    margin: 0 auto;
+    width: fit-content;
+
+    @include mq('md') {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,142 @@
+@use 'sass:color';
+
+.btn {
+  @include flex-all-center;
+
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: 1.5;
+  transition: 0.2s ease;
+  cursor: none;
+
+  &__svg {
+    width: rem(16);
+    height: rem(16);
+    color: $black;
+  }
+
+  &[disabled] {
+    @include unselectable;
+
+    opacity: 0.5;
+  }
+
+  &[class*='-white'] {
+    color: $dark-primary;
+    background-color: $white;
+
+    &:not([disabled]) {
+      &:focus {
+        box-shadow: inset 0 0 0 rem(2) $primary;
+      }
+
+      @include hover {
+        background-color: $light-grey;
+
+        &:active {
+          box-shadow: inset 0 0 0 rem(2) $primary;
+        }
+      }
+    }
+
+    svg {
+      fill: $dark-primary;
+    }
+  }
+
+  &[class*='-secondary'] {
+    color: $dark-primary;
+    background-color: $light-grey;
+
+    &:not([disabled]) {
+      &:focus {
+        box-shadow: inset 0 0 0 rem(2) $primary;
+      }
+
+      @include hover {
+        background-color: $border-grey;
+
+        &:active {
+          box-shadow: inset 0 0 0 rem(2) $primary;
+        }
+      }
+    }
+
+    svg {
+      fill: $dark-primary;
+    }
+  }
+
+  &[class*='-primary'] {
+    color: $white;
+    background-color: $dark-primary;
+
+    &:not([disabled]) {
+      @include hover {
+        background-color: color.adjust($primary, $lightness: -20%);
+
+        &:active {
+          box-shadow: inset 0 0 0 rem(2) $primary;
+        }
+      }
+    }
+
+    svg {
+      fill: $white;
+    }
+  }
+
+  &[class*='-opaque'] {
+    $bg: #f9f9f9;
+
+    color: $white;
+    background-color: rgba($bg, 0.15);
+
+    &:not([disabled]) {
+      @include hover {
+        background-color: rgba($bg, 0.3);
+
+        &:active {
+          box-shadow: inset 0 0 0 rem(2) $primary;
+        }
+      }
+    }
+
+    svg {
+      fill: $white;
+    }
+  }
+
+  &[class*='-ghost'] {
+    color: $dark-primary;
+    background-color: transparent;
+
+    &:not([disabled]) {
+      @include hover {
+        background-color: $border-grey;
+
+        &:active {
+          box-shadow: inset 0 0 0 rem(2) $primary;
+        }
+      }
+    }
+
+    svg {
+      fill: $dark-primary;
+    }
+  }
+
+  &[class*='--medium'] {
+    padding: rem(16) rem(32);
+    gap: rem(12);
+  }
+
+  &[class*='--small'] {
+    padding: rem(12) rem(24);
+    gap: rem(8);
+  }
+
+  &._wf {
+    width: 100%;
+  }
+}

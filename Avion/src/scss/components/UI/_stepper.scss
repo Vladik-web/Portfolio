@@ -1,0 +1,25 @@
+.stepper {
+  display: flex;
+  width: rem(150);
+  background-color: $light-grey;
+
+  &__btn {
+    @include flex-all-center;
+
+    flex-shrink: 0;
+    width: rem(46);
+    height: rem(46);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.375;
+    color: $border-dark;
+  }
+
+  &__input {
+    outline: none;
+    border: none;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+  }
+}

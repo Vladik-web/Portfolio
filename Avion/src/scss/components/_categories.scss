@@ -1,0 +1,25 @@
+.categories {
+  @include flex-all-center;
+
+  &__list {
+    @include flex-v-center;
+    @include adaptive-value('padding-inline', 30, 24);
+    @include hide-scroll;
+
+    // column-gap: rem(44);
+    overflow: auto hidden;
+    white-space: nowrap;
+  }
+
+  &__item {
+    @include mr(rem(44));
+  }
+
+  &__link {
+    outline: none;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.375;
+    color: #726e8d;
+  }
+}

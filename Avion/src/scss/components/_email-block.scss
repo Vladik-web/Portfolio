@@ -1,0 +1,61 @@
+.email-block {
+  padding: rem(52) 0 rem(65) 0;
+  background-color: $light-grey;
+
+  &__inner {
+    @include adaptive-value('padding-top', 68, 48);
+    @include adaptive-value('padding-bottom', 54, 38);
+
+    background-color: $white;
+    padding-inline: rem(50);
+
+    @include mq('sm') {
+      align-items: flex-start;
+      padding-inline: 0;
+    }
+  }
+
+  &__title {
+    @include adaptive-value('font-size', 36, 20);
+
+    margin-bottom: rem(16);
+    font-family: 'Clash Display', sans-serif;
+    line-height: 1.4;
+    text-align: center;
+
+    @include mq('sm') {
+      max-width: unset;
+      text-align: left;
+    }
+  }
+
+  &__text {
+    @include adaptive-value('font-size', 16, 14);
+
+    margin: 0 auto;
+    margin-bottom: rem(72);
+    max-width: rem(470);
+    line-height: 1.5;
+    text-align: center;
+
+    @include mq('sm') {
+      margin-bottom: rem(64);
+      max-width: unset;
+      text-align: left;
+    }
+  }
+
+  &__form {
+    margin: 0 auto;
+    max-width: rem(472);
+
+    @include mq('sm') {
+      max-width: 100%;
+    }
+  }
+
+  @include mq('sm') {
+    padding: 0;
+    background-color: var(--white);
+  }
+}

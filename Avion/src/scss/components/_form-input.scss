@@ -1,0 +1,36 @@
+.form-input {
+  display: flex;
+
+  &__input {
+    @include adaptive-value('padding-inline', 32, 17);
+
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.375;
+    background-color: $light-grey;
+    padding-block: rem(17);
+
+    @include mq('md') {
+      width: 100%;
+    }
+  }
+
+  &__submit {
+    flex-shrink: 0;
+  }
+
+  &--white {
+    .form-input {
+      &__input {
+        color: $white;
+        background-color: rgb(255 255 255 / 15%);
+      }
+    }
+  }
+
+  @include mq('md') {
+    width: 100%;
+  }
+}

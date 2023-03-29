@@ -1,0 +1,51 @@
+{
+  "name": "gulp",
+  "version": "4.0",
+  "description": "Сборка gulp",
+  "scripts": {
+    "run dev": "gulp",
+    "lint": "eslint ./src/js",
+    "lint:fix": "eslint ./src/js --fix",
+    "format": "prettier ./src  --write"
+  },
+  "author": "https://github.com/Vladik-web",
+  "license": "ISC",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.29.0",
+    "del": "^6.0.0",
+    "eslint": "^8.34.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-svg-sprite": "^2.0.2",
+    "prettier": "^2.8.4",
+    "sass": "^1.59.3",
+    "stylelint": "^14.14.0",
+    "stylelint-config-standard-scss": "^6.0.0",
+    "stylelint-order": "^5.0.0",
+    "webpack": "^5.76.2",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "core-js": "^3.28.0",
+    "gulp-replace": "^1.1.4",
+    "scroll-lock": "^2.1.5",
+    "swiper": "^9.1.1"
+  }
+}

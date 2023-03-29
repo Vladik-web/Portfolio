@@ -1,0 +1,108 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  color: $white;
+  background-color: $dark-primary;
+
+  &__inner {
+    padding: rem(22) 0;
+  }
+
+  &__right {
+    padding-top: rem(50);
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: rem(1) solid $primary;
+    padding-bottom: rem(48);
+    gap: rem(20);
+
+    @include mq('md') {
+      display: block;
+      padding-bottom: rem(20);
+    }
+  }
+
+  &__bottom {
+    padding-top: rem(22);
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+    font-family: 'Clash Display', sans-serif;
+    font-size: 1rem;
+    line-height: 1.25;
+  }
+
+  &__blocks {
+    @include grid-default-set(3, 1fr, rem(20));
+
+    @include mq('md') {
+      @include grid-default-set(2, 1fr, rem(20));
+    }
+  }
+
+  &__block {
+    &-head {
+      margin-bottom: rem(12);
+      font-family: 'Clash Display', sans-serif;
+      font-style: normal;
+      line-height: 1.25;
+    }
+  }
+
+  &__item {
+    @include mb(rem(12));
+  }
+
+  &__link {
+    display: flex;
+    width: fit-content;
+    font-weight: 300;
+    font-size: rem(14);
+    line-height: 1.35;
+    text-decoration: none;
+    color: $white;
+  }
+
+  &__socials {
+    @include flex-v-center;
+
+    justify-content: flex-end;
+    gap: rem(24);
+
+    @include mq('md') {
+      justify-content: center;
+    }
+  }
+
+  &__social {
+    width: fit-content;
+
+    &-link {
+      display: flex;
+
+      @include hover {
+        svg {
+          fill: $border-dark;
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    &-icon {
+      width: rem(24);
+      height: rem(24);
+      fill: $white;
+    }
+  }
+
+  @include mq('md') {
+    position: static;
+  }
+}

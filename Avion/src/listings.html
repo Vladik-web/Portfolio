@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  @@include('components/_head.html', {title: 'Product Listings'})
+  <body>
+    @@include("components/_cursor.html")
+
+    <div class="base-layout">
+      @@include("components/_header.html")
+      <main class="main">
+        <section class="product-listings">
+          <div class="product-listings__banner">
+            <h1 class="product-listings__title">All products</h1>
+          </div>
+          <div class="container">
+            <div class="product-listings__inner">
+              <aside class="product-listings__aside">
+                <div class="product-listings__body">
+                  <div class="product-listings__wrapper">
+                    <button class="product-listings__close" id="product-listings-close">
+                      <svg class="product-listings__close-svg">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                      </svg>
+                    </button>
+                    <div class="product-listings__sort">
+                      <h3 class="product-listings__sort-title">Product type</h3>
+                      <ul class="product-listings__blocks">
+                        <li class="product-listings__block">
+                          <label class="product-listings__ckeckbox checkbox">
+                            <input type="checkbox" class="checkbox__input" />
+                            <span class="checkbox__custom"></span>
+                            Furniture
+                          </label>
+                        </li>
+                        <li class="product-listings__block">
+                          <label class="product-listings__ckeckbox checkbox">
+                            <input type="checkbox" class="checkbox__input" />
+                            <span class="checkbox__custom"></span>
+                            Homeware
+                          </label>
+                        </li>
+                        <li class="product-listings__block">
+                          <label class="product-listings__ckeckbox checkbox">
+                            <input type="checkbox" class="checkbox__input" />
+                            <span class="checkbox__custom"></span>
+                            Sofas
+                          </label>
+                        </li>
+                        <li class="product-listings__block">
+                          <label class="product-listings__ckeckbox checkbox">
+                            <input type="checkbox" class="checkbox__input" />
+                            <span class="checkbox__custom"></span>
+                            Homeware
+                          </label>
+                        </li>
+                        <li class="product-listings__block">
+                          <label class="product-listings__ckeckbox checkbox">
+                            <input type="checkbox" class="checkbox__input" />
+                            <span class="checkbox__custom"></span>
+                            Light fittings
+                          </label>
+                        </li>
+                        <li class="product-listings__block">
+                          <label class="product-listings__ckeckbox checkbox">
+                            <input type="checkbox" class="checkbox__input" />
+                            <span class="checkbox__custom"></span>
+                            Accessories
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-listings__sort">
+                      <h3 class="product-listings__sort-title">Price</h3>
+                      <ul class="product-listings__blocks">
+                        <li class="product-listings__block">
+                          <label class="product-listings__ckeckbox checkbox">
+                            <input type="checkbox" class="checkbox__input" />
+                            <span class="checkbox__custom"></span>
+                            0 - 100
+                          </label>
+                        </li>
+                        <li class="product-listings__block">
+                          <label class="product-listings__ckeckbox checkbox">
+                            <input type="checkbox" class="checkbox__input" />
+                            <span class="checkbox__custom"></span>
+                            101 - 250
+                          </label>
+                        </li>
+                        <li class="product-listings__block">
+                          <label class="product-listings__ckeckbox checkbox">
+                            <input type="checkbox" class="checkbox__input" />
+                            <span class="checkbox__custom"></span>
+                            250 +
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="product-listings__sort">
+                      <h3 class="product-listings__sort-title">Designer</h3>
+                      <ul class="product-listings__blocks">
+                        <li class="product-listings__block">
+                          <label class="product-listings__ckeckbox checkbox">
+                            <input type="checkbox" class="checkbox__input" />
+                            <span class="checkbox__custom"></span>
+                            Robert Smith
+                          </label>
+                        </li>
+                        <li class="product-listings__block">
+                          <label class="product-listings__ckeckbox checkbox">
+                            <input type="checkbox" class="checkbox__input" />
+                            <span class="checkbox__custom"></span>
+                            Liam Gallagher
+                          </label>
+                        </li>
+                        <li class="product-listings__block">
+                          <label class="product-listings__ckeckbox checkbox">
+                            <input type="checkbox" class="checkbox__input" />
+                            <span class="checkbox__custom"></span>
+                            Biggie Smalls
+                          </label>
+                        </li>
+                        <li class="product-listings__block">
+                          <label class="product-listings__ckeckbox checkbox">
+                            <input type="checkbox" class="checkbox__input" />
+                            <span class="checkbox__custom"></span>
+                            Thom Yorke
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="product-listings__apply btn btn--medium-primary" id="product-apply">Apply</button>
+                  </div>
+                </div>
+              </aside>
+              <div class="product-listings__content">
+                <div class="product-listings__buttons">
+                  <button class="product-listings__filter btn btn--medium-secondary" id="product-filter">
+                    Filters
+                    <svg class="btn__svg">
+                      <use xlink:href="img/sprite.svg#caret-down"></use>
+                    </svg>
+                  </button>
+                  <button class="product-listings__sorting btn btn--medium-secondary" id="product-sorting">
+                    Sorting
+                    <svg class="btn__svg">
+                      <use xlink:href="img/sprite.svg#caret-down"></use>
+                    </svg>
+                  </button>
+                </div>
+                <ul class="product-listings__list">
+                  <li class="product-listings__card product-card">
+                    <a href="product.html" class="product-card__image">
+                      <img src="img/products/4.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Lucy Lamp</h3>
+                    <strong class="product-card__price">£399</strong>
+                  </li>
+                  <li class="product-listings__card product-card">
+                    <a href="product.html" class="product-card__image">
+                      <img src="img/products/1.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Lucy Lamp</h3>
+                    <strong class="product-card__price">£399</strong>
+                  </li>
+                  <li class="product-listings__card product-card">
+                    <a href="product.html" class="product-card__image">
+                      <img src="img/products/2.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Lucy Lamp</h3>
+                    <strong class="product-card__price">£399</strong>
+                  </li>
+                  <li class="product-listings__card product-card">
+                    <a href="product.html" class="product-card__image">
+                      <img src="img/products/3.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Lucy Lamp</h3>
+                    <strong class="product-card__price">£399</strong>
+                  </li>
+                  <li class="product-listings__card product-card">
+                    <a href="product.html" class="product-card__image">
+                      <img src="img/products/4.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Lucy Lamp</h3>
+                    <strong class="product-card__price">£399</strong>
+                  </li>
+                  <li class="product-listings__card product-card">
+                    <a href="product.html" class="product-card__image">
+                      <img src="img/products/1.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Lucy Lamp</h3>
+                    <strong class="product-card__price">£399</strong>
+                  </li>
+                  <li class="product-listings__card product-card">
+                    <a href="product.html" class="product-card__image">
+                      <img src="img/products/2.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Lucy Lamp</h3>
+                    <strong class="product-card__price">£399</strong>
+                  </li>
+                  <li class="product-listings__card product-card">
+                    <a href="product.html" class="product-card__image">
+                      <img src="img/products/3.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Lucy Lamp</h3>
+                    <strong class="product-card__price">£399</strong>
+                  </li>
+                  <li class="product-listings__card product-card">
+                    <a href="product.html" class="product-card__image">
+                      <img src="img/products/3.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Lucy Lamp</h3>
+                    <strong class="product-card__price">£399</strong>
+                  </li>
+                </ul>
+                <button class="product-listings__btn btn btn--medium-secondary">Load more</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include("components/_footer.html")
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &__image {
+    @include adaptive-value('height', 375, 201);
+
+    display: flex;
+    overflow: hidden;
+    margin-bottom: rem(24);
+
+    img {
+      @include fill-image('cover');
+
+      transition: 0.15s ease;
+    }
+
+    @include hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__title {
+    @include text-max-lines(2);
+
+    flex: 1 1 auto;
+    margin-bottom: rem(8);
+    font-family: 'Clash Display', sans-serif;
+    font-size: rem(20);
+    line-height: 1.4;
+  }
+
+  &__price {
+    margin-top: auto;
+    font-weight: 400;
+    font-size: rem(18);
+  }
+}

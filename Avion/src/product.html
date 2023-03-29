@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  @@include('components/_head.html', {title: 'The Dandy Chair'})
+  <body>
+    @@include("components/_cursor.html")
+    <div class="base-layout">
+      @@include("components/_header.html")
+      <main class="main">
+        <section class="product">
+          <div class="product__inner">
+            <div class="product__images">
+              <div class="product__slider swiper">
+                <div class="product__wrapper swiper-wrapper">
+                  <div class="product__slide swiper-slide">
+                    <img src="img/product/pr-1.jpg" alt="" />
+                  </div>
+                  <div class="product__slide swiper-slide">
+                    <img src="img/product/pr-2.jpg" alt="" />
+                  </div>
+                  <div class="product__slide swiper-slide">
+                    <img src="img/product/pr-3.jpg" alt="" />
+                  </div>
+                  <div class="product__slide swiper-slide">
+                    <img src="img/product/pr-4.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product__right">
+              <div class="product__details">
+                <div class="product__top">
+                  <h1 class="product__title">The Dandy Chair</h1>
+                  <span class="product__price">£250</span>
+                </div>
+                <div class="product__description">
+                  <h2 class="product__caption">Description</h2>
+                  <div class="product__text">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, omnis ab? Ab in sed deserunt
+                      dignissimos aspernatur maxime natus velit assumenda optio autem nesciunt molestias quibusdam,
+                      praesentium esse. Voluptas laudantium, inventore, minus debitis molestiae, magni harum deleniti
+                      dicta facere natus aperiam quis. Laboriosam eius quisquam debitis porro omnis vero iusto dolorum
+                      atque. Minus amet animi, eos quia quas, dolores recusandae, cum quam modi eum omnis obcaecati
+                      reprehenderit expedita voluptas labore repudiandae adipisci iste facilis placeat dolorem
+                      consequatur quos iusto? Omnis dolorum unde delectus ipsam consequuntur laboriosam rerum corporis
+                      officiis nobis necessitatibus laborum error qui facere voluptatum, ex dolore facilis eveniet!
+                    </p>
+                    <ul>
+                      <li>Удобно</li>
+                      <li>Стильно</li>
+                      <li>Модно</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="product__dimensions">
+                  <h2 class="product__caption">Dimensions</h2>
+                  <div class="product__characteristics">
+                    <div class="product__characteristic">
+                      <h3 class="product__head">Height</h3>
+                      <span class="product__value">110cm</span>
+                    </div>
+                    <div class="product__characteristic">
+                      <h3 class="product__head">Width</h3>
+                      <span class="product__value">75cm</span>
+                    </div>
+                    <div class="product__characteristic">
+                      <h3 class="product__head">Depth</h3>
+                      <span class="product__value">50cm</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__order">
+                  <div class="product__counter">
+                    <h2 class="product__caption">Amount:</h2>
+                    <div class="product__stepper stepper">
+                      <button class="stepper__btn">-</button>
+                      <input class="stepper__input" type="number" value="1" />
+                      <button class="stepper__btn">+</button>
+                    </div>
+                  </div>
+                  <button class="product__add btn btn--medium-primary">Add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="listings">
+          <div class="container">
+            <div class="listings__inner">
+              <ul class="listings__list">
+                <li class="listings__card product-card">
+                  <div class="product-card">
+                    <a href="#" class="product-card__image">
+                      <img src="img/products/1.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Dandy chair</h3>
+                    <strong class="product-card__price">£250</strong>
+                  </div>
+                </li>
+                <li class="listings__card product-card">
+                  <div class="product-card">
+                    <a href="#" class="product-card__image">
+                      <img src="img/products/2.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">Rustic Vase Set</h3>
+                    <strong class="product-card__price">£155</strong>
+                  </div>
+                </li>
+                <li class="listings__card product-card">
+                  <div class="product-card">
+                    <a href="#" class="product-card__image">
+                      <img src="img/products/3.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Silky Vase</h3>
+                    <strong class="product-card__price">£125</strong>
+                  </div>
+                </li>
+                <li class="listings__card product-card">
+                  <div class="product-card">
+                    <a href="#" class="product-card__image">
+                      <img src="img/products/4.jpg" alt="" />
+                    </a>
+                    <h3 class="product-card__title">The Lucy Lamp</h3>
+                    <strong class="product-card__price">£399</strong>
+                  </div>
+                </li>
+              </ul>
+              <a href="#" class="listings__link btn btn--medium-secondary">View collection</a>
+            </div>
+          </div>
+        </section>
+        <section class="features">
+          <div class="container">
+            <div class="features__inner">
+              <h2 class="features__title">What makes our brand different</h2>
+
+              <ul class="features__list">
+                <li class="features__item">
+                  <svg class="features__item-svg">
+                    <use xlink:href="img/sprite.svg#delivery"></use>
+                  </svg>
+                  <h3 class="features__item-title">Next day as standard</h3>
+                  <p class="features__item-description">Order before 3pm and get your order the next day as standard</p>
+                </li>
+                <li class="features__item">
+                  <svg class="features__item-svg">
+                    <use xlink:href="img/sprite.svg#checkmark-outline"></use>
+                  </svg>
+                  <h3 class="features__item-title">Made by true artisans</h3>
+                  <p class="features__item-description">
+                    Handmade crafted goods made with real passion and craftmanship
+                  </p>
+                </li>
+                <li class="features__item">
+                  <svg class="features__item-svg">
+                    <use xlink:href="img/sprite.svg#purchase"></use>
+                  </svg>
+                  <h3 class="features__item-title">Made by true artisans</h3>
+                  <p class="features__item-description">
+                    Handmade crafted goods made with real passion and craftmanship
+                  </p>
+                </li>
+                <li class="features__item">
+                  <svg class="features__item-svg">
+                    <use xlink:href="img/sprite.svg#sprout"></use>
+                  </svg>
+                  <h3 class="features__item-title">Recycled packaging</h3>
+                  <p class="features__item-description">
+                    We use 100% recycled to ensure our footprint is more manageable
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="email-block">
+          <div class="container">
+            <div class="email-block__inner">
+              <h2 class="email-block__title">Join the club and get the benefits</h2>
+              <p class="email-block__text">
+                Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more
+              </p>
+              <div class="email-block__form">
+                <form class="email-block__form form-input">
+                  <input type="text" class="form-input__input" placeholder="your@email.com" />
+                  <button class="form-input__submit btn btn--medium-primary" type="submit">Sign up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include("components/_footer.html")
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

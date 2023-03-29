@@ -1,0 +1,12 @@
+@mixin hide-scroll {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin unselectable {
+  user-select: none;
+  -webkit-touch-callout: none;
+}

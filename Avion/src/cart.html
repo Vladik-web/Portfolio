@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  @@include('components/_head.html', {title: 'Cart'})
+  <body>
+    @@include("components/_cursor.html")
+
+    <div class="base-layout">
+      @@include("components/_header.html")
+      <main class="main">
+        <section class="cart">
+          <div class="container">
+            <div class="cart__inner">
+              <h1 class="cart__title">Your shopping cart</h1>
+
+              <div class="cart__table">
+                <div class="cart__top">
+                  <div class="cart__top-item">Product</div>
+                  <div class="cart__top-item">Quantity</div>
+                  <div class="cart__top-item">Total</div>
+                </div>
+                <div class="cart__bottom">
+                  <ul class="cart__list">
+                    <li class="cart__shopping-card shopping-card">
+                      <div class="shopping-card__left">
+                        <a href="product.html" class="shopping-card__image">
+                          <img src="img/product/pr-1.jpg" alt="" />
+                        </a>
+                      </div>
+                      <div class="shopping-card__info">
+                        <a href="product.html" class="shopping-card__title">Graystone vase</a>
+                        <p class="shopping-card__description">A timeless ceramic vase with a tri color grey glaze.</p>
+                        <span class="shopping-card__price">£85</span>
+                      </div>
+                      <div class="shopping-card__counter">
+                        <div class="shopping-card__stepper stepper">
+                          <button class="stepper__btn">-</button>
+                          <input class="stepper__input" type="number" value="1" />
+                          <button class="stepper__btn">+</button>
+                        </div>
+                      </div>
+                      <span class="shopping-card__total">£85</span>
+                    </li>
+                    <li class="cart__shopping-card shopping-card">
+                      <div class="shopping-card__left">
+                        <a href="product.html" class="shopping-card__image">
+                          <img src="img/product/pr-2.jpg" alt="" />
+                        </a>
+                      </div>
+                      <div class="shopping-card__info">
+                        <a href="product.html" class="shopping-card__title">Graystone vase</a>
+                        <p class="shopping-card__description">A timeless ceramic vase with a tri color grey glaze.</p>
+                        <span class="shopping-card__price">£85</span>
+                      </div>
+                      <div class="shopping-card__counter">
+                        <div class="shopping-card__stepper stepper">
+                          <button class="stepper__btn">-</button>
+                          <input class="stepper__input" type="number" value="1" />
+                          <button class="stepper__btn">+</button>
+                        </div>
+                      </div>
+                      <span class="shopping-card__total">£85</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="cart__subtotal">Subtotal <strong>£210</strong></div>
+              <span class="cart__tip">Taxes and shipping are calculated at checkout</span>
+              <button class="cart__btn btn btn--medium-primary">Go to checkout</button>
+            </div>
+          </div>
+        </section>
+      </main>
+      @@include("components/_footer.html")
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
